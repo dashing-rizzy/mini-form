@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/Background/favicon_io/android-chrome-192x192.png">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1 id="title">Please Fill the Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <main class="form-container">
+        <form id="survey-form">
+            <div class="form-items">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-items">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-items">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" min="13" max="120" id="number" placeholder="Enter your age">
+            </div>
+            <div class="form-items">
+                <p>What are your favourite Programming Languages ?</p>
+                <div>
+                    <input value="Javascript" name="ProgLanguage" type="radio" id="Javascript" checked>
+                    <label for="Javascript">Javascript</label>
+                </div>
+                    <div>
+                        <input value="Python" name="ProgLanguage" type="radio" id="Python">
+                    <label for="Python">Python</label>
+                    </div>
+                <div>
+                    <input value="PHP" name="ProgLanguage" type="radio" id="PHP">
+                <label for="PHP">PHP</label>
+                </div>
+            </div>
+            <div class="form-items">
+                <p>What do you want to become ?</p>
+                <div >
+                    <input value="FED" name="FED" type="checkbox" id="FED" >
+                    <label for="FED">Front End Developer</label>
+                </div>
+                    <div>
+                        <input value="BED" name="BED" type="checkbox" id="BED">
+                    <label for="BED">Back End Developer</label>
+                    </div>
+                <div>
+                    <input value="DA" name="DA" type="checkbox" id="DA">
+                <label for="DA">Data Analyst</label>
+                </div>
+                <div>
+                    <input value="UD" name="UD" type="checkbox" id="UD">
+                <label for="UD">UI/UX Designer</label>
+                </div>
+                <div>
+                    <input value="FSD" name="FSD" type="checkbox" id="FSD">
+                <label for="FSD">Full Stack Developer</label>
+                </div>
+            </div>
+
+            <div class="form-items">
+                <label for="dropdown" id="country-label">Country</label>
+                <select id="dropdown" name="country" required>
+                    <option value="" selected disabled>Select your country</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="India">India</option>
+                    <option  value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+            <div class="form-items">
+                <label for="comments" id="comments-label">If you want to give any Feedback (optional)</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Leave any comments here"></textarea>
+            </div>
+            <div class="submit-items">
+                <input type="submit" id="submit"></button>
+            </div>
+        </form>
+    </main>
+    <footer id="footer">
+        <p> 2024 All rights reserved by Rizwan Ali.</p>
+    </footer>
+</div>
+</body>
+</html>
