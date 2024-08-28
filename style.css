@@ -99,11 +99,16 @@ select {
     #form-container {
         width: 100%;
     }
+    .container {
+        width: 150%;
+        height: 100%;        
+}
 }
 
 @media screen and (max-width: 400px) {
     .container {
         width: 100%;
+        flex-wrap: nowrap;
 }
 input, textarea, select {
     width: 100%;
